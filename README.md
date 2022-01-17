@@ -36,12 +36,12 @@ $ tree .git/objects
 
 5 directories, 3 files
 ```
-See the type
+Print the type
 ```
 $ git cat-file -t 5b3c
 commit
 ```
-See the contents
+Print the contents
 ```
 $ git cat-file -p 5b3c
 tree f93e3a1a1525fb5b91020da86e44810c87a2d7bc
@@ -51,7 +51,7 @@ committer Luckyaxl <luckyaxl3@gmail.com> 1642432249 +0700
 initial commit
 ```
 
-## Git Areas and Stashing
+# Git Areas and Stashing
 The `working area` is like your scratch space, it's where you can add new content, or modify and delete. and you don't need to worry about losing your work. The file in your working area that are also not in the staging are not handled by git. Also untracked files
 
 The `staging area` is how git knows what will change between the currentt commit and the next commmit, consider the baseline staging area as being an exact copy of the latest commit.
@@ -63,7 +63,7 @@ $ git ls-files -s
 
 `Git Stash` is a way to save uncomitted work, the stash is safe from destructive operations, can be deleted, change or overwrite like git reset or git checkout
 
-Git stash basic use
+## Git stash basic use
 ### Stash changes
 ```
 $ git stash
@@ -100,3 +100,36 @@ $ git stash branch <optional stash name>
 $ git checkout <stash name> -- <filename>
 ```
 
+# References, Commits, Branches
+Three types of Git References
+
+- Tags & Annotated Tags
+- Branches
+- HEAD
+
+`Branch` is a pointer to a particular commit. The pointer to the current branch is going to change as new commits are made.
+
+`HEAD` is how git knows what branch you’re currently on, and what the next parent will be.
+```
+$ git checkout master
+```
+```
+$ cat .git/HEAD
+ref: refs/heads/master
+```
+```
+$ git checkout feature
+Switched to branch 'feature'
+```
+```
+$ cat .git/HEAD
+ref: refs/heads/feature
+```
+# Merging and Rebasing
+# History and Diffs
+# Fixing Mistakes
+# Rebase and Amend
+# Forks & Remote Repos
+# Danger Zone
+# Github
+# Advanced Github
