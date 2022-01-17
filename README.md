@@ -180,6 +180,18 @@ $ git diff --staged
 
 
 # Fixing Mistakes
+
+There’s a few tools for Fixing mistakes in git.
+> checkout, reset, revert, clean
+
+`Git checkout` is a command that restore working tree files or switch branches
+
+`Git reset` is another comment that performs different actions depending on the arguments.
+
+`Git revert` creates a new commit that introduces the opposite changes from the specified commit and the original commit stays in the repository.
+
+`Git clean` will clear your working area by deleting untracked files.  Use —dry-run flag to see what would be deleted
+
 # Rebase and Amend
 # Forks & Remote Repos
 # Danger Zone
