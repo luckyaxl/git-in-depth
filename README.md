@@ -193,7 +193,14 @@ There’s a few tools for Fixing mistakes in git.
 `Git clean` will clear your working area by deleting untracked files.  Use —dry-run flag to see what would be deleted
 
 # Rebase and Amend
+
+**Rebase** = give a commit new parent :)
+
+**Amend** is a quick and easy shortcut that lets you make changes to the previous commit.
 # Forks & Remote Repos
-# Danger Zone
-# Github
-# Advanced Github
+A fork is a copy of repository that’s stored in your GitHub account. You can clone your fork to your local computer.
+
+A remote is a git repository stored elsewhere - on the web, in GitHub, etc.
+
+<em>**origin**</em> is the default name git gives to the server you cloned from
+s
